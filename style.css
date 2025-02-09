@@ -292,57 +292,91 @@ body::-webkit-scrollbar{
 .sales-2-cards div{
   margin: 0  20px;
 }
-  /*--footer--*/
-  .outer-div{
-    display: flex;
-    flex-direction: column;
-  }
-  .outer-div-col{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .inner-div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .div-col-1>.inner-div{
-    flex-grow: 4;
-  }
-  .div-col-1>.inner-div-1{
-    border-right: 2px solid gray;
-    margin: 0 5px;
-  }
-  .div-col-2>.inner-div{
-    flex-grow: 1;
-  }
-  .div-col-1{
-    border-bottom: 2px solid gray;
-  }
-  .inner-div h6{
-    font-size: 15px;
-  }
-  .inner-div ul li{
-    font-weight: bold;
-   font-size: 15px;
-  }
- footer{
-    height: auto;
-    width: 100%;
- }
- .inner-div-1{
-  width: 70%;
- }
- .inner-div-2{
-  width: 30%;
- }
- .div-col-2{
+ /*---footer---*/
+ .footer {
+  margin: 5%;
+  font-family: 'Poppins', sans-serif;
+  
+  color: #b3b3b3;
+  padding: 20px 40px;
+}
+
+.footer-top {
+  margin-bottom: 20px;
+}
+
+.footer-top h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.footer-links {
   display: flex;
-  align-items: center;
- }
- .div-col-2>div{
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-column {
   display: flex;
-  align-items: center;
-  margin: 0 20px;
- }
+  flex-direction: column;
+}
+
+.footer-column a {
+  color: #b3b3b3;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.footer-bottom>div {
+  margin-top: 2%;
+  color: #b3b3b3;
+}
+
+.language-select {
+  margin-right: 20px;
+  padding: 5px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #333;
+  border: 1px solid #666;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer a {
+  font-size: 14px;
+  color: #7e7e7e;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+@media screen and (max-width: 1300px) {
+  footer {
+      max-width: 90vw;
+      padding: 75px 0;
+  }
+
+  .footer-item {
+      align-items: center;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .footer-links {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-links {
+      display: flex;
+      flex-direction: column;
+  }
+}
